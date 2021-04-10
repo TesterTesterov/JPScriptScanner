@@ -1,6 +1,6 @@
 # JP_script_scanner
 ## Русский
-Средство с интерфейсом командной строки для сканирования скриптов японских программ и получения данных о словах и кандзи в них.
+Двуязычное (на русском и английском) средство с интерфейсом командной строки для сканирования скриптов японских программ и получения данных о словах и кандзи в них.
 **До использования установите (см. последний раздел).**
 
 На текущий момент может:
@@ -14,7 +14,7 @@
 - вывести принадлежность каждого кандзи.
 
 ## English
-CLI tool for Japanese programs script scanning and words/kanji data in them obtaining.
+Dual languaged (Russian and English) CLI tool for Japanese programs script scanning and words/kanji data in them obtaining.
 **Install before usage (see the last paragraph).
 
 Currently with this tool you can:
@@ -49,7 +49,7 @@ Currently with this tool you can:
 # Installation
 ## Русский
 - Установите [Python 3](https://www.python.org/downloads/).
-- Установите [библиотеку MeCab для Python 3](https://pypi.org/project/mecab-python3/) и [https://pypi.org/project/kanji-lists/](kanji-lists).
+- Установите [библиотеку MeCab для Python 3](https://pypi.org/project/mecab-python3/) и [kanji-lists](https://pypi.org/project/kanji-lists/).
 - Установите [MeCab](https://taku910.github.io/mecab/#download) в какую-нибудь папку. Условно назовём её <Папка-1>.
 - В случае Windows добавьте путь <Папка-1>\MeCab\bin в переменную среды PATH.
 
