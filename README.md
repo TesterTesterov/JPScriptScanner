@@ -48,6 +48,7 @@ Currently with this tool you can:
 
 # Installation
 ## Русский
-- Установите (https://www.python.org/downloads/)[Python].
+- Установите [https://www.python.org/downloads/](Python 3).
 
 ## English
+- Install the [https://www.python.org/downloads/](Python 3)
