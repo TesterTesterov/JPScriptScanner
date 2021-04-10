@@ -49,6 +49,12 @@ Currently with this tool you can:
 # Installation
 ## Русский
 - Установите [https://www.python.org/downloads/](Python 3).
+- Установите [https://pypi.org/project/mecab-python3/](библиотеку MeCab для Python3) и [https://pypi.org/project/kanji-lists/](kanji-lists).
+- Установите [https://taku910.github.io/mecab/#download](MeCab) в какую-нибудь папку. Условно назовём её <Папка-1>.
+- В случае Windows добавьте путь <Папка-1>\MeCab\bin в переменную среды PATH.
 
 ## English
-- Install the [https://www.python.org/downloads/](Python 3)
+- Install the [https://www.python.org/downloads/](Python 3).
+- Install the [https://pypi.org/project/mecab-python3/](MeCab library or Python3) and [https://pypi.org/project/kanji-lists/](kanji-lists).
+- Install the [https://taku910.github.io/mecab/#download](MeCab) in some folder. Let's call it <Folder-1>.
+- In case of Windows update the %PATH% with <Folder-1>\MeCab\bin.
