@@ -55,12 +55,12 @@ You can view words data sample [here](https://vndb.org/t15822).
 # Installation
 ## Русский
 - Установите [Python 3](https://www.python.org/downloads/).
-- Установите [библиотеку MeCab для Python 3](https://pypi.org/project/mecab-python3/) и [kanji-lists](https://pypi.org/project/kanji-lists/).
+- Установите [библиотеку MeCab для Python 3](https://pypi.org/project/mecab-python3/), [unidic-lite](https://pypi.org/project/unidic-lite/) и [kanji-lists](https://pypi.org/project/kanji-lists/).
 - Установите [MeCab](https://taku910.github.io/mecab/#download) в какую-нибудь папку. Условно назовём её <Папка-1>.
 - В случае Windows добавьте путь <Папка-1>\MeCab\bin в переменную среды PATH.
 
 ## English
 - Install the [Python 3](https://www.python.org/downloads/).
-- Install the [MeCab library for Python](https://pypi.org/project/mecab-python3/) and [kanji-lists](https://pypi.org/project/kanji-lists/).
+- Install the [MeCab library for Python](https://pypi.org/project/mecab-python3/), [unidic-lite](https://pypi.org/project/unidic-lite/) and [kanji-lists](https://pypi.org/project/kanji-lists/).
 - Install the [MeCab](https://taku910.github.io/mecab/#download) in some folder. Let's call it <Folder-1>.
 - In case of Windows update the %PATH% with <Folder-1>\MeCab\bin.
