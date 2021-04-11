@@ -13,6 +13,9 @@
 - отсортировать кандзи по спискам (дзёё, дзиммэйё, хёгайдзи, N1-5);
 - вывести принадлежность каждого кандзи.
 
+Пример по кандзи вы можете видеть [здесь](https://vndb.org/t15800).
+Пример по словам вы можете видеть [здесь](https://vndb.org/t15822).
+
 ## English
 Dual languaged (Russian and English) CLI tool for Japanese programs script scanning and words/kanji data in them obtaining.
 **Install before usage (see the last paragraph).
@@ -26,6 +29,9 @@ Currently with this tool you can:
 - sort presented kanji by frequency;
 - sort presented kanji by lists (jouyou, jinmeijou, hyougaiji, N1-5);
 - output each kanji list affilation.
+
+You can view kanji data sample [here](https://vndb.org/t15800).
+You can view words data sample [here](https://vndb.org/t15822).
 
 # Usage
 ## Русский
