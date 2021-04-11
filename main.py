@@ -6,7 +6,7 @@ import os
 
 default_folder = 'in_files'
 
-def testing_func():
+def chasen_testing_func():
     import MeCab
     stringer = "決まった形がなく　次々と形を変える"
     tagger = MeCab.Tagger("-Ochasen")  # -Oyomi, #-Ochasen, #-Odump, #-Owakati,
@@ -26,9 +26,25 @@ def testing_func():
     print(dobro)
     exit()
 
+def dump_testing_func():
+    import MeCab
+    stringer = "決まった形がなく　次々と形を変える"
+    tagger = MeCab.Tagger("-Odump")  # -Oyomi, #-Ochasen, #-Odump, #-Owakati,
+    dobro = []
+    resulter = tagger.parse(stringer).split('\n')
+    resulter.pop(-1)
+    resulter.pop(-1)
+    resulter.pop(0)
+    for i in range(len(resulter)):
+        resulter[i] = resulter[i].split(' ')
+        #firsst_res = resulter[i][1]
+        second_res = resulter[i][2].split(',')[-3]
+        dobro.append(second_res)
+    print(dobro)
+    exit()
 
 if __name__ == '__main__':
-    # testing_func()
+    #dump_testing_func()
 
     if (not (os.path.isdir(default_folder))):
         os.makedirs(default_folder, exist_ok=True)

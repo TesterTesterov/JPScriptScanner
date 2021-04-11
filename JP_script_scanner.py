@@ -318,7 +318,7 @@ class JP_script_scanner:
         print(count)
 
     def _add_word_data_from_file(self, fromer, symbols, freq, count):
-        tagger = MeCab.Tagger("-Ochasen")
+        tagger = MeCab.Tagger("-Odump")
         in_file = open(fromer, mode='r', encoding=self._encoding)
         new_line = in_file.readline()
         while (new_line != ''):
@@ -327,13 +327,15 @@ class JP_script_scanner:
                 new_line = in_file.readline()
                 continue
             many_words = []
+
             zlo = tagger.parse(new_line).split('\n')
-            if (zlo[-1] == ''):
-                zlo.pop(-1)
-            if (zlo[-1] == 'EOS'):
-                zlo.pop(-1)
-            for i in zlo:
-                many_words.append(i.split('\t')[2])
+            zlo.pop(-1)
+            zlo.pop(-1)
+            zlo.pop(0)
+            for i in range(len(zlo)):
+                zlo[i] = zlo[i].split(' ')
+                second_res = zlo[i][2].split(',')[-3]
+                many_words.append(second_res)
 
             for word in many_words:
                 if (not (self._is_japanese(word))):
