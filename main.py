@@ -32,15 +32,28 @@ def dump_testing_func():
     tagger = MeCab.Tagger("-Odump")  # -Oyomi, #-Ochasen, #-Odump, #-Owakati,
     dobro = []
     resulter = tagger.parse(stringer).split('\n')
-    resulter.pop(-1)
-    resulter.pop(-1)
     resulter.pop(0)
+    resulter.pop(-1)
+    resulter.pop(-1)
     for i in range(len(resulter)):
         resulter[i] = resulter[i].split(' ')
-        #firsst_res = resulter[i][1]
-        second_res = resulter[i][2].split(',')[-3]
+        #print(resulter[i])
+        #first_res = resulter[i][1]
+        second_res = resulter[i][2].split(',')[7]
         dobro.append(second_res)
     print(dobro)
+    exit()
+
+def testing_func():
+    name = 'test'
+    bad_words = []
+    bad_kanji = []
+    in_folder = default_folder
+    encoding = 'utf-8'
+    scannow = JP_script_scanner(in_folder, encoding, bad_words, bad_kanji)
+    scannow.kanji_data_to_file('{}_KANJI.txt'.format(name))
+    scannow.word_data_to_file('{}_WORDS.txt'.format(name))
+    del scannow
     exit()
 
 if __name__ == '__main__':

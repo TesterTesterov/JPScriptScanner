@@ -334,8 +334,11 @@ class JP_script_scanner:
             zlo.pop(0)
             for i in range(len(zlo)):
                 zlo[i] = zlo[i].split(' ')
-                second_res = zlo[i][2].split(',')[-3]
-                many_words.append(second_res)
+                try:
+                    second_res = zlo[i][2].split(',')[7]
+                    many_words.append(second_res.split('-')[0])
+                except:
+                    pass
 
             for word in many_words:
                 if (not (self._is_japanese(word))):
