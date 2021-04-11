@@ -360,7 +360,7 @@ class JP_script_scanner:
                 new_liner = new_liner.replace(j, '^')
         return new_liner
     def _is_japanese(self, liner):
-        if (len(liner) == len(liner.encode('cp932'))):
+        if (len(liner) == len(liner.encode(encoding='cp932', errors='ignore'))):
             return False
         else:
             return True
